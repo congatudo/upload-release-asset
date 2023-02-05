@@ -14,11 +14,8 @@ inputs:
   asset_content_type:
     description: 'The content-type of the asset you want to upload. See the supported Media Types here: https://www.iana.org/assignments/media-types/media-types.xhtml for more information'
     required: true
-outputs:
-  browser_download_url:
-    description: 'The URL users can navigate to in order to download the uploaded asset'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 branding:
   icon: 'package'
